@@ -1,0 +1,29 @@
+.layoutContainer{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    nav{
+        background-color: #2e769f;
+    }
+    main{
+        flex: 1;
+        background-color: #edeeee;
+
+    }
+    footer{
+        background-color: #364451;
+        color:#edeeee;
+    }
+}
+.blue1{
+    color: #005785;
+}
+.blue2{
+    color: #003451;
+}
+.blue3{
+    color: #5894A9;
+}
+.icon{
+    color: #fff;
+}
