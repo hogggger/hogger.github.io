@@ -8,7 +8,14 @@ import "../scss/layout.scss"
 
 const Layout = ({ children }) => {
   const [active, setActive] = useState("")
-  const data ={}
+  // shiyong useStaticQuery 来查询是否有品牌图片  初步来看userStaticQuery有点类似 query和vue的computed
+//   const data = useStaticQuery(graphql`
+//   {
+//     file(absolutePath: { regex: "/brand.png/" }) {
+//       publicURL
+//     }
+//   }
+// `)
 
   return (
     <div class="layoutContainer">
@@ -17,21 +24,6 @@ const Layout = ({ children }) => {
         role="navigation"
         aria-label="main navigation"
       >
-        <div class="navbar-brand">
-          <Link className="navbar-item" to=".">
-          </Link>
-          <a
-            role="button"
-            className={"navbar-burger" + active}
-            aria-label="menu"
-            aria-expanded="false"
-  
-          >
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
-        </div>
         <div class={"navbar-menu" + active} id="navMenu">
           <div class="navbar-end">
             <Link className="navbar-item" to="archive">Archive</Link>
@@ -40,7 +32,7 @@ const Layout = ({ children }) => {
         </div>
       </nav>
       <main class="columns is-centered" style={{ margin: `1em` }}>
-        <div class="column is-two-thirds-tablet">test</div>
+        <div class="column is-two-thirds-tablet">{children}</div>
       </main>
       <footer class="footer">
         <div class="content has-text-centered">
