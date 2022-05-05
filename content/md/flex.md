@@ -1,5 +1,5 @@
 ---
-title: gatsby建站详细教程及避坑攻略
+title: flex布局详解
 date: 2020-02-27 16:02:35
 tags: [教程,react,gatsby]
 ---
