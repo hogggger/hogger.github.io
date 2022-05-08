@@ -6,9 +6,10 @@ export default ({ data }) => {
   const post = data.markdownRemark
   return (
     <Layout>
-      <div>
+      <div class="blogContent">
         <h1 className="headerTitle">{post.frontmatter.title}</h1>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <div>占位，上一篇或者下一篇</div>
       </div>
     </Layout>
   )
