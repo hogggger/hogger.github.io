@@ -50,6 +50,44 @@ exports.createPages = async ({ graphql,actions }) =>{
         })
         console.log('----',node.fields.slug)
     })
+    //创建tag
+    const tagPost = path.resolve(`./src/templates/tagposts.js`)
+    const tagPostResult = await graphql(
+      `
+      {
+        allMarkdownRemark {
+          nodes {
+            frontmatter {
+              tags
+            }
+          }
+        }
+      }
+      `
+    )
+  
+    if (tagPostResult.errors) {
+      throw tagPostResult.errors
+    }
+  
+    // Create blog posts pages.
+    const nodes = tagPostResult.data.allMarkdownRemark.nodes
+  
+    var tagSet = new Set()
+  
+    nodes.forEach(node => node.frontmatter.tags.forEach(tag => tagSet.add(tag)))
+  
+    tagSet.forEach( tag => createPage({
+      path: "tag/" + tag,
+      component: tagPost,
+      context: {
+        targetTag : tag
+      },
+    }))
+  
+  
+  
+
     
 
 }

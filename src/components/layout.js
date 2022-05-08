@@ -36,7 +36,7 @@ const Layout = ({ children }) => {
         <div className={"navbar-menu" + active} id="navMenu">
           <div className="navbar-end">
             <Link className="navbar-item" >Archive</Link>
-            <Link className="navbar-item" to="tags">Tags</Link>
+            <Link className="navbar-item" to="../../tags">Tags</Link>
           </div>
         </div>
       </nav>
