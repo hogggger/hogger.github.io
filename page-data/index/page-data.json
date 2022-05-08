@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-pages-index-js",
+    "path": "/",
+    "result": {"data":{"allMarkdownRemark":{"totalCount":2,"edges":[{"node":{"id":"cfdc75ee-7bf5-5ea6-80bd-e2437894db91","excerpt":"flex 今天来复习一下flex布局 上一个章节的居中布局，最后一种方法就是使用弹性盒子。 弹性盒子的基本性质： 1.flex的属性适用于父子，父的孙元素不适应； 2.flex-basis的计算法则有两个分支； 3.善用margin-auto 属性和作用:flex 可以控制容器…","frontmatter":{"date":"27 February, 2020","tags":["教程","css","gatsby"],"title":"flex布局详解"},"fields":{"slug":"/flex/"}}},{"node":{"id":"d2458f2d-eab3-51d8-864e-b3744a7ea76d","excerpt":"test","frontmatter":{"date":"27 February, 2020","tags":["教程","react","gatsby","测试"],"title":"测试专用"},"fields":{"slug":"/test/"}}}]}},"pageContext":{}},
+    "staticQueryHashes": ["2744905544"]}

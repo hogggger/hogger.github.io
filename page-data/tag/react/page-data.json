@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-tagposts-js",
+    "path": "/tag/react",
+    "result": {"data":{"site":{"siteMetadata":{"title":"hogger s website"}},"allMarkdownRemark":{"edges":[{"node":{"excerpt":"test","fields":{"slug":"/test/"},"frontmatter":{"date":"February 27, 2020","title":"测试专用","tags":["教程","react","gatsby","测试"]}}}]}},"pageContext":{"targetTag":"react"}},
+    "staticQueryHashes": ["2744905544"]}
