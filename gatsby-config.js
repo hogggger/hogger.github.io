@@ -3,7 +3,7 @@ module.exports = {
     title: `hogger s website`,
     siteUrl: `https://github.com/hogggger/hogger.github.io`
   },
-  pathPrefix: '/',
+  pathPrefix: '/hogger.github.io',
   plugins: ["gatsby-plugin-theme-ui",`gatsby-plugin-sass`, "gatsby-plugin-mdx", {
       resolve: 'gatsby-source-filesystem',
       options: {
