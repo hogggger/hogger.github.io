@@ -24,6 +24,7 @@ const flexPost = ({ data }) => {
           desc={node.excerpt}
           tags={node.frontmatter.tags}
           key={index}
+          slug={node.fields.slug}
           ></PostCard>
         )
       })
@@ -44,6 +45,9 @@ export const query = graphql`
             date(formatString: "DD MMMM, YYYY")
             tags
             title
+          }
+          fields {
+            slug
           }
         }
       }

@@ -18,7 +18,8 @@ const Layout = ({ children }) => {
         aria-label="main navigation"
       >
         <div className="navbar-brand">
-          <Link className="navbar-item" to=".">
+          <Link className="navbar-item" to="../../">
+            Home
           </Link>
           <a
             role="button"
@@ -34,7 +35,7 @@ const Layout = ({ children }) => {
         </div>
         <div className={"navbar-menu" + active} id="navMenu">
           <div className="navbar-end">
-            <Link className="navbar-item" to="archive">Archive</Link>
+            <Link className="navbar-item" >Archive</Link>
             <Link className="navbar-item" to="tags">Tags</Link>
           </div>
         </div>

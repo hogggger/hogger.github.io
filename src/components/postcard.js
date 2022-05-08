@@ -8,7 +8,9 @@ const PostCard = (prop)=>{
         <div className="box">
             <article className="content" key={prop.title}>
                 <header>
-                    <h2 className="title">{prop.title}</h2>
+                    <Link style={{ boxShadow: `none` }} to={"md" + prop.slug}>
+                       <h2 className="title">{prop.title}</h2>
+                    </Link>
                     <h6 className="subTitle">{prop.date}</h6>
                 </header>
                 <section>

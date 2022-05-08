@@ -1,7 +1,7 @@
 ---
 title: flex布局详解
 date: 2020-02-27 16:02:35
-tags: [教程,react,gatsby]
+tags: [教程,css,gatsby]
 ---
 # flex
 今天来复习一下flex布局
