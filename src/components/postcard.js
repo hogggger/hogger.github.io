@@ -8,7 +8,7 @@ const PostCard = (prop)=>{
         <div className="box">
             <article className="content" key={prop.title}>
                 <header>
-                    <Link style={{ boxShadow: `none` }} to={"md" + prop.slug}>
+                    <Link style={{ boxShadow: `none` }} to={"/md" + prop.slug}>
                        <h2 className="title">{prop.title}</h2>
                     </Link>
                     <h6 className="subTitle">{prop.date}</h6>
@@ -28,7 +28,7 @@ const PostCard = (prop)=>{
                     prop.tags.map((tag) => {
                         const index = Math.random()*1000
                         return (
-                            <Link key={index} to={"tag/"+tag} className="tag">{tag}</Link>
+                            <Link key={index} to={"/tag/"+tag} className="tag">{tag}</Link>
                         )
                     })
                 }

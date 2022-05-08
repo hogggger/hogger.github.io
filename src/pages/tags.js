@@ -31,7 +31,7 @@ const Tags = ({ data }) => {
           return (
             <div class="control">
               <div class="tags has-addons are-medium">
-                <Link to={"../tag/" + tag} className="tag">{tag}</Link>
+                <Link to={"/tag/" + tag} className="tag">{tag}</Link>
                 <span class="tag is-info">{count}</span>
               </div>
             </div>
