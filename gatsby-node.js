@@ -11,9 +11,12 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     })
   }
 }
+
 exports.createPages = async ({ graphql,actions }) =>{
     const { createPage } = actions
-    const result = await graphql(`
+    // 准备数据
+    // 博客数据
+    const blogResult = await graphql(`
     query{
         allMarkdownRemark{
             edges{
@@ -21,18 +24,28 @@ exports.createPages = async ({ graphql,actions }) =>{
                     fields{
                         slug
                     }
+                    frontmatter{
+                        title
+                    }
                 }
             }
         }
     }
     `)
     const blogPost = path.resolve(`./src/templates/blogpost.js`)
-    result.data.allMarkdownRemark.edges.forEach(( {node} ) =>{
+    const postBlogs = blogResult.data.allMarkdownRemark.edges
+    postBlogs.forEach(( {node} ,index) =>{
+        console.log('index+++++++',index)
+        // 使用index 、next previous 来设置上一篇和下一篇文章的快速链接
+        const next = (index === postBlogs.length-1)? null :postBlogs[index+1].node
+        const previous = (index === 0)?null :postBlogs[index-1].node
         createPage({
             path:"md"+node.fields.slug,
             component:blogPost,
             context:{
-                slug:node.fields.slug
+                slug:node.fields.slug,
+                previous,
+                next
             }
         })
         console.log('----',node.fields.slug)
