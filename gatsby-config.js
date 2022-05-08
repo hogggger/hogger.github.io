@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `hogger s website`,
-    siteUrl: `https://www.yourdomain.tld`
+    siteUrl: `https://github.com/hogggger/hogger.github.io`
   },
   pathPrefix: '/',
   plugins: ["gatsby-plugin-theme-ui",`gatsby-plugin-sass`, "gatsby-plugin-mdx", {
