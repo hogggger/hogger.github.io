@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-pages-tags-js",
     "path": "/tags/",
-    "result": {"data":{"allMarkdownRemark":{"edges":[{"node":{"frontmatter":{"tags":["教程","css","gatsby"]}}},{"node":{"frontmatter":{"tags":["教程","react","gatsby","测试"]}}}]}},"pageContext":{}},
+    "result": {"data":{"allMarkdownRemark":{"edges":[{"node":{"frontmatter":{"tags":["教程","浏览器","翻译文献"]}}},{"node":{"frontmatter":{"tags":["教程","css","gatsby"]}}},{"node":{"frontmatter":{"tags":["教程","react","gatsby","测试"]}}}]}},"pageContext":{}},
     "staticQueryHashes": ["2744905544"]}

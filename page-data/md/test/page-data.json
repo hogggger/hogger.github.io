@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-blogpost-js",
     "path": "/md/test/",
-    "result": {"data":{"markdownRemark":{"html":"<h3>test</h3>","frontmatter":{"title":"测试专用"}}},"pageContext":{"slug":"/test/","previous":{"fields":{"slug":"/flex/"},"frontmatter":{"title":"flex布局详解"}},"next":null}},
+    "result": {"data":{"markdownRemark":{"html":"<h3>test</h3>","frontmatter":{"title":"测试专用"}}},"pageContext":{"slug":"/test/","previous":{"fields":{"slug":"/flex/"},"frontmatter":{"title":"flex布局详解"}},"next":{"fields":{"slug":"/翻译/"},"frontmatter":{"title":"现代浏览器内部实现机制"}}}},
     "staticQueryHashes": ["2744905544"]}

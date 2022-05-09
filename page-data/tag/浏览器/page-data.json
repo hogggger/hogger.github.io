@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-tagposts-js",
+    "path": "/tag/浏览器",
+    "result": {"data":{"site":{"siteMetadata":{"title":"hogger s website"}},"allMarkdownRemark":{"edges":[{"node":{"excerpt":"look at modern web browser (part 1) Tag: CPU/GPU/存储介质()/多线程机制 如果你曾经好奇过浏览器是怎么将你的代码转化成功能型网站，又或者你不确定为什么一个特定技术会被用来作为表现优化，那这个系列就是给你准备的。 part1 我们…","fields":{"slug":"/翻译/"},"frontmatter":{"date":"May 09, 2022","title":"现代浏览器内部实现机制","tags":["教程","浏览器","翻译文献"]}}}]}},"pageContext":{"targetTag":"浏览器"}},
+    "staticQueryHashes": ["2744905544"]}
