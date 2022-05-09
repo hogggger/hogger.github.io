@@ -26,7 +26,10 @@ const Layout = ({ children }) => {
             className={"navbar-burger" + active}
             aria-label="menu"
             aria-expanded="false"
-  
+            data-target="navMenu"
+            onClick={() =>
+              active === "" ? setActive(" is-active") : setActive("")
+            }
           >
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
@@ -35,7 +38,7 @@ const Layout = ({ children }) => {
         </div>
         <div className={"navbar-menu" + active} id="navMenu">
           <div className="navbar-end">
-            <Link className="navbar-item" >Archive</Link>
+            <Link className="navbar-item" to="/">Archive</Link>
             <Link className="navbar-item" to="/tags">Tags</Link>
           </div>
         </div>

@@ -23,16 +23,16 @@ const Tags = ({ data }) => {
   return (
     <Layout>
     
-      <h1 class="title has-text-black is-1">All Tags</h1>
-      <p class="subtitle is-spaced">Click the tag to read related articles</p>
+      <h1 className="title has-text-black is-1">All Tags</h1>
+      <p className="subtitle is-spaced">Click the tag to read related articles</p>
       <hr />
-      <div class="field is-grouped is-grouped-multiline">
+      <div className="field is-grouped is-grouped-multiline">
         {tagPair.map(([tag, count]) => {
           return (
-            <div class="control">
-              <div class="tags has-addons are-medium">
+            <div className="control">
+              <div className="tags has-addons are-medium">
                 <Link to={"/tag/" + tag} className="tag">{tag}</Link>
-                <span class="tag is-info">{count}</span>
+                <span className="tag is-info">{count}</span>
               </div>
             </div>
           )
